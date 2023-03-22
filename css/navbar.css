@@ -6,6 +6,7 @@ nav{
     background-color: transparent;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 nav ul{
     width: 95%;
@@ -30,4 +31,13 @@ nav ul{
 }
 #logonav{
     width: 30%;
+}
+nav.abajo{
+    transition: 0.3s;
+    background-color: #F5F5F5;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+nav.abajo #logonav,
+nav.abajo ul li a{
+    color: #1E1E1E;
 }

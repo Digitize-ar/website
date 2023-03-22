@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Nunito:wght@300;400;600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Digitize</title>
 </head>
 <body>
@@ -17,9 +18,10 @@
             </div>
             <div class="links">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#valores">Valores</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </div>
         </ul>
     </nav>
@@ -34,13 +36,13 @@
             </div>
         </div>
     </section>
-    <section class="servicios">
+    <section class="servicios" id="servicios">
         <div class="sections-title">
             <h1 id="title">Servicios</h1>
-            <p>Ayudamos en la transformación digital de nuestros clientes con soluciones innovadoras. Usando nuestra creatividad.</p>
+            <p>Ayudamos en la transformación digital de nuestros clientes con soluciones innovadoras, usando nuestra creatividad.</p>
         </div>
         <div class="card-container">
-            <div class="card" id="card-1">
+            <div class="card" id="card-1" data-aos="fade-down-right">
                 <div class="card-header">
                     <h3>Diseño</h3><img src="./img/lapiz.svg" alt="">
                 </div>
@@ -52,7 +54,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card" id="card-2">
+            <div class="card" id="card-2" data-aos="fade-up">
                 <div class="card-header">
                     <h3>Desarrollo</h3><img src="./img/code.svg" alt="">
                 </div>
@@ -64,7 +66,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card" id="card-3">
+            <div class="card" id="card-3" data-aos="fade-down-left">
                 <div class="card-header">
                     <h3>Hosting</h3><img src="./img/upload-solid 1.svg" alt="">
                 </div>
@@ -78,30 +80,30 @@
             </div>
         </div>
     </section>
-    <section class="valores">
+    <section class="valores" id="valores">
         <div class="sections-title">
-            <h1 id="title">Valores</h1>
+            <h1 id="title">Nuestros valores</h1>
         </div> 
         <div class="valores-container">
-            <div class="item-container">
+            <div class="item-container" data-aos="flip-up">
                 <div class="item" id="innovacion">
                     <h3 class="title-item">Innovacion</h3>
                     <p class="item-content">Tras la reciente crisis sanitaria por la pandemia, se acelero la digitalizacion de los negocios y sus modelos, por lo cual entendemos que es una obligacion para las empresas de hoy en dia y buscamos brindar soluciones eficientes y de calidad</p>
                 </div>
             </div>
-            <div class="item-container">
+            <div class="item-container" data-aos="flip-up">
                 <div class="item" id="personal">
-                    <h3 class="title-item" id="">Personal</h3>
+                    <h3 class="title-item" id="">Calidad de personal</h3>
                     <p class="item-content">Nuestro personal tiene una sólida formación académica y un perfil técnico avanzado. Somos flexibles y dinámicos, para adaptarnos a las necesidades de cada proyecto.</p>
                 </div>
             </div>
-            <div class="item-container">
+            <div class="item-container" data-aos="flip-up">
                 <div class="item" id="organizacion">
                     <h3 class="title-item">Organización</h3>
                     <p class="item-content">Para el desarrollo de nuestras tareas, utilizamos avanzados sistemas de gestión interna y de gestión de clientes, y así evaluamos nuestro desempeño. Tambien creamos documentación muy detallada y completa para cada proyecto</p>
                 </div>
             </div>
-            <div class="item-container">
+            <div class="item-container" data-aos="flip-up">
                 <div class="item" id="compromiso">
                     <h3 class="title-item">Compromiso</h3>
                     <p class="item-content">Nuestra pasión por lo que hacemos nos lleva a buscar siempre los mejores resultados, adquiriendo un alto compromiso con el éxito de todos los proyectos en los que participamos.</p>
@@ -109,40 +111,200 @@
             </div>
         </div>
     </section>
-    <section class="proyectos">
+    <section class="proyectos" id="proyectos">
         <div id='stars'></div>
         <div id='stars2'></div>
         <div id='stars3'></div>
         <div class="sections-title">
             <h1 id="title">Proyectos</h1>
+        </div>    
+        <div class="items-explained" id="items-exp-container">
+            <div class="item-explained" id="item-exp1">
+                <div class="top-item">
+                    <button onclick="closeDiv('item-exp1')"><i class="fa-solid fa-xmark"></i></button></i>
+                </div>
+                <div class="logo-item">
+                    <img src="./img/Logo-Dibook 1.svg" alt="">
+                </div>
+                <div class="content-item">
+                    Sistema de conversion de fotos a documento para su posterior impresion en braille.
+                </div>
+                <div class="lenguajes-logo">
+                    <img src="./img/html-logo.svg" alt="">
+                    <img src="./img/css3-alt 1.svg" alt="">
+                    <img src="./img/js-logo.svg" alt="">
+                </div>
+                <div class="item-button">
+                    <a href="#">Ver mas</a>
+                </div>
+            </div>
+            <div class="item-explained" id="item-exp2">
+                <div class="top-item">
+                    <button onclick="closeDiv('item-exp2')"><i class="fa-solid fa-xmark"></i></button></i>
+                </div>
+                <div class="logo-item">
+                    <img src="./img/Logo-Dibook 1.svg" alt="">
+                </div>
+                <div class="content-item">
+                    Sistema de conversion de fotos a documento para su posterior impresion en braille.
+                </div>
+                <div class="lenguajes-logo">
+                    <img src="./img/html-logo.svg" alt="">
+                    <img src="./img/css3-alt 1.svg" alt="">
+                    <img src="./img/js-logo.svg" alt="">
+                </div>
+                <div class="item-button">
+                    <a href="#">Ver mas</a>
+                </div>
+            </div>
+            <div class="item-explained" id="item-exp3">
+                <div class="top-item">
+                    <button onclick="closeDiv('item-exp3')"><i class="fa-solid fa-xmark"></i></button></i>
+                </div>
+                <div class="logo-item">
+                    <img src="./img/Logo-Dibook 1.svg" alt="">
+                </div>
+                <div class="content-item">
+                    Sistema de conversion de fotos a documento para su posterior impresion en braille.
+                </div>
+                <div class="lenguajes-logo">
+                    <img src="./img/html-logo.svg" alt="">
+                    <img src="./img/css3-alt 1.svg" alt="">
+                    <img src="./img/js-logo.svg" alt="">
+                </div>
+                <div class="item-button">
+                    <a href="#">Ver mas</a>
+                </div>
+            </div>
+            <div class="item-explained" id="item-exp4">
+                <div class="top-item">
+                    <button onclick="closeDiv('item-exp4')"><i class="fa-solid fa-xmark"></i></button></i>
+                </div>
+                <div class="logo-item">
+                    <img src="./img/Logo-Dibook 1.svg" alt="">
+                </div>
+                <div class="content-item">
+                    Sistema de conversion de fotos a documento para su posterior impresion en braille.
+                </div>
+                <div class="lenguajes-logo">
+                    <img src="./img/html-logo.svg" alt="">
+                    <img src="./img/css3-alt 1.svg" alt="">
+                    <img src="./img/js-logo.svg" alt="">
+                </div>
+                <div class="item-button">
+                    <a href="#">Ver mas</a>
+                </div>
+            </div>
         </div>
-        <div class="proyectos-container">
+        <div class="proyectos-container" data-aos="zoom-in">
             <div class="circle-container" id="circle1">
-                <div class="circle-item"></div>
+               <button onclick="toggleDiv('item-exp1')"><div class="circle-item"></div></button> 
                 <div class="project-name">
                     <h3>DiBook</h3>
                 </div>
             </div>
             <div class="circle-container" id="circle2">
-                <div class="circle-item"></div>
+                <button onclick="toggleDiv('item-exp2')"><div class="circle-item"></div></button>
                 <div class="project-name">
                     <h3>DiCloud</h3>
                 </div>
+                
             </div>
             <div class="circle-container" id="circle3">
-                <div class="circle-item"></div>
+                <button onclick="toggleDiv('item-exp3')"><div class="circle-item"></div></button>
                 <div class="project-name">
                     <h3>Alecarp</h3>
                 </div>
+                
             </div>
             <div class="circle-container" id="circle4">
-                <div class="circle-item"></div>
+                <button onclick="toggleDiv('item-exp4')"><div class="circle-item"></div></button>
                 <div class="project-name">
                     <h3>Dimere</h3>
                 </div>
             </div>
-            
         </div>
     </section>
+    <section class="contacto" id="contacto">
+        <div class="sections-title">
+            <h1 id="title">¡Contactanos!</h1>
+        </div>
+        <div class="contact-container">
+            <div class="form-container">
+                <form action="">
+                    <div class="duo-container" id="input-container">
+                        <div class="name-input">
+                            <input type="text" placeholder="Nombre" class="input-type1 input" >
+                        </div>
+                        <div class="surname-input">
+                            <input type="text" placeholder="Apellido" class="input-type1 input">
+                        </div>
+                    </div>
+                    <div class="single-container" id="input-container">
+                        <input type="email" name="" id="" placeholder="Dirección de E-mail" class="input-type2 input">
+                    </div>
+                    <div class="duo-container mobile-single" id="input-container">
+                        <div class="input-number">
+                            <input type="number"placeholder='Numero de telefono' class="input-type1 input">
+                        </div>
+                        <div class="pref-contact">
+                            <div class="label"></div>
+                            <label for="pref_contacto" class="lab-pref">¿Cómo te contactamos?</label>
+                            <select name="pref_contacto" id="" class="select-pref">
+                                <option value="1">Telefono</option>
+                                <option value="2">E-mail</option>
+                                <option value="3">Whatsapp</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="single-container" id="input-container">
+                        <textarea name="" id="" placeholder="¿Cómo podemos ayudarte?" class="input-type3 input" ></textarea>
+                    </div>          
+                    <input type="submit" class="form_submit input">
+                </form>
+            </div>
+            <div class="img-container">
+                <img src="./img/undraw_personal_email_re_4lx7 1.svg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-top">
+            <h3>Simplifica tu vida con Digitize, soluciones tecnológicas a tu alcance</h3>
+        </div>
+        <div class="footer-mid">
+            <div class="columna1">
+                <h4>Contactate</h4>
+                <div class="columna-content">
+                    <p>digitize.arg@gmail.com</p>
+                    <p>+54 11 6747-0473</p>
+                    <p>Buenos Aires, Argentina</p>
+                </div>
+            </div>
+            <div class="columna2">
+                <img src="./img/digitize-SNF.png" alt="">
+            </div>
+            <div class="columna3">
+                <h4>Nuestras redes</h4>
+                <div class="redes-container">
+                    <img src="./img/instagram 1.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <small>&copy; Copyright 2022, Digitize</small>
+    </footer>
+    <script src="./main.js"></script>
+    <script>
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("abajo", window.scrollY>0);
+        })
+    </script>
+    <script src="https://kit.fontawesome.com/d7854b1267.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
