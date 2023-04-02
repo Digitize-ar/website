@@ -5,10 +5,11 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 body{
     overflow-x: hidden;
-    width: 100.8%;
+    width: 101%;
     background-color: #F5F5F5;
 }
 /* Estilo scrrolbar */
@@ -612,6 +613,16 @@ small{
 }
 /* Inicio css tablet */
 @media (max-width: 1200px) {
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    html{
+        overflow-x: hidden;
+    }
     .home-container{
         width: 95vw;
         height: 100vh;
@@ -748,12 +759,6 @@ small{
 }
 /* Inicio de css para celular */
 @media (max-width: 750px) {
-html{
-    overflow-x: hidden;
-}
-nav{
-    display: none;
-}
 /* inicio */
 .home-container{
     flex-direction: column-reverse;
