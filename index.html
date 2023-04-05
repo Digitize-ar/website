@@ -11,7 +11,7 @@
     <title>Digitize</title>
 </head>
 <body>
-    <nav>
+    <nav class="navbar" id="navbar">
         <ul>
             <div class="logo">
                 <img src="./img/digitize-SNF.png" alt="logo de digitize" id="logonav">
@@ -24,12 +24,26 @@
                 <li><a href="#contacto">Contacto</a></li>
             </div>
         </ul>
-        <button class="bars">
-            <div></div>
-            <div></div>
-            <div></div>
-        </button>
     </nav>
+    <div class="nav2">
+        <div class="logo2">
+            <img src="./img/Nube-SNF.png" alt="logo de digitize">
+        </div>
+        <div class="boton">
+            <button class="bars" id="btn-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </div> 
+    </div>
+        <div class="links2">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#valores">Valores</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </div>            
     <section class="home">
         <div class="home-container">
             <div class="texto">
@@ -302,8 +316,8 @@
     <script src="./main.js"></script>
     <script>
         window.addEventListener("scroll", function(){
-            var nav = document.querySelector("nav");
-            nav.classList.toggle("abajo", window.scrollY>0);
+            var navblank = document.querySelector(".navbar");
+            navblank.classList.toggle("abajo", window.scrollY>0);
         })
     </script>
     <script src="https://kit.fontawesome.com/d7854b1267.js" crossorigin="anonymous"></script>

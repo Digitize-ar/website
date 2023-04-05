@@ -1,5 +1,8 @@
 var itemcont = document.getElementById("items-exp-container");
 var circles = document.querySelectorAll(".circle-container");
+var navbar = document.getElementById("navbar")
+const btnmenu = document.getElementById("btn-menu")
+const menu = document.querySelector(".links2")
 
 function toggleDiv(id) {
     var div = document.getElementById(id);
@@ -27,3 +30,14 @@ function toggleDiv(id) {
     
     }
   }
+  
+  btnmenu.addEventListener("click", () => {
+      menu.classList.toggle("links2-open")
+  })
+
+  window.addEventListener('resize', function(event) {
+    if (window.innerWidth < 750) {
+      navbar.style.display = "none";
+    }
+    });
+  

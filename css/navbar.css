@@ -1,4 +1,4 @@
-nav{
+.navbar{
     width: 100%;
     height: 80px;
     position: fixed;
@@ -8,7 +8,7 @@ nav{
     justify-content: center;
     z-index: 10;
 }
-nav ul{
+.navbar ul{
     width: 95%;
     height: 95%;
     display: flex;
@@ -32,13 +32,13 @@ nav ul{
 #logonav{
     width: 30%;
 }
-nav.abajo{
+.navbar.abajo{
     transition: 0.3s;
     background-color: #F5F5F5;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
-nav.abajo #logonav,
-nav.abajo ul li a{
+.navbar.abajo #logonav,
+.navbar.abajo ul li a{
     color: #1E1E1E;
 }
 /*Estilos para el boton del menu desplegable*/
@@ -50,6 +50,9 @@ nav.abajo ul li a{
     border: 0;
     background: transparent;
     gap: 0.65rem;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-right: 5%;
 }
 .bars div{
     background-color: #1DD2B9;
@@ -67,4 +70,55 @@ nav.abajo ul li a{
 }
 .bars:hover div:last-child{
     transform: rotate(-45deg);
+}
+.nav2{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    z-index: 20;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+.logo2{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    z-index: 15;
+}
+.logo2 img{
+    width: 85px;
+}
+.boton{
+    display: flex;
+    width: 95%;
+    height: 100%;
+    justify-content: right;
+    align-items: center;
+}
+.links2{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: right;
+    background-color: #F5F5F5;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+    margin-top: 60px;
+    opacity: 0;
+}
+.links2 a{
+    color: #1E1E1E;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+}
+.links2-open{
+    display: flex;
+    opacity: 1;
 }
