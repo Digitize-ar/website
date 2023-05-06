@@ -27,22 +27,22 @@
     </nav>
     <div class="nav2">
         <div class="logo2">
-            <img src="./img/Nube-SNF.png" alt="logo de digitize">
+            <img src="./img/digitize-SNF.png" alt="logo de digitize">
         </div>
         <div class="boton">
-            <button class="bars" id="btn-menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
+            <div class="bars-menu" id="btn-menu">
+                <span class="lines1"></span>
+                <span class="lines2"></span>
+                <span class="lines3"></span>
+            </div>
         </div> 
     </div>
         <div class="links2">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#valores">Valores</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#" class="nav-links">Inicio</a></li>
+            <li><a href="#servicios" class="nav-links">Servicios</a></li>
+            <li><a href="#valores" class="nav-links">Valores</a></li>
+            <li><a href="#proyectos" class="nav-links">Proyectos</a></li>
+            <li><a href="#contacto" class="nav-links">Contacto</a></li>
         </div>            
     <section class="home">
         <div class="home-container">
@@ -250,26 +250,26 @@
         </div>
         <div class="contact-container">
             <div class="form-container">
-                <form action="">
+                <form id="form">
                     <div class="duo-container" id="input-container">
                         <div class="name-input">
-                            <input type="text" placeholder="Nombre" class="input-type1 input" >
+                            <input type="text" placeholder="Nombre" class="input-type1 input" name="name" id="name" required>
                         </div>
-                        <div class="surname-input">
-                            <input type="text" placeholder="Apellido" class="input-type1 input">
+                        <div class="lastname-input">
+                            <input type="text" placeholder="Apellido" class="input-type1 input" name="lastname" id="lastname" required>
                         </div>
                     </div>
                     <div class="single-container" id="input-container">
-                        <input type="email" name="" id="" placeholder="Dirección de E-mail" class="input-type2 input">
+                        <input type="email" name="email" id="email" placeholder="Dirección de E-mail" class="input-type2 input" required>
                     </div>
                     <div class="duo-container mobile-single" id="input-container">
                         <div class="input-number">
-                            <input type="number"placeholder='Numero de telefono' class="input-type1 input">
+                            <input type="number"placeholder='Numero de telefono' class="input-type1 input" name="number" id="number" required>
                         </div>
                         <div class="pref-contact">
                             <div class="label"></div>
                             <label for="pref_contacto" class="lab-pref">¿Cómo te contactamos?</label>
-                            <select name="pref_contacto" id="" class="select-pref">
+                            <select name="pref_contacto" id="preferencia-ct" class="select-pref" required>
                                 <option value="1">Telefono</option>
                                 <option value="2">E-mail</option>
                                 <option value="3">Whatsapp</option>
@@ -277,9 +277,9 @@
                         </div>
                     </div>
                     <div class="single-container" id="input-container">
-                        <textarea name="" id="" placeholder="¿Cómo podemos ayudarte?" class="input-type3 input" ></textarea>
+                        <textarea name="message" id="message" placeholder="¿Cómo podemos ayudarte?" class="input-type3 input" required></textarea>
                     </div>          
-                    <input type="submit" class="form_submit input">
+                    <input type="submit" class="form_submit input" id="button" value="Send Email">
                 </form>
             </div>
             <div class="img-container">
@@ -307,7 +307,7 @@
             <div class="columna3">
                 <h4>Nuestras redes</h4>
                 <div class="redes-container">
-                    <img src="./img/instagram 1.svg" alt="">
+                    <a href="https://www.instagram.com/digitize.arg/" target="_blank"><img src="./img/instagram 1.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -325,5 +325,10 @@
     <script>
         AOS.init();
       </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('JDAPAM4y1RD2BDSiI')
+    </script>
 </body>
 </html>

@@ -286,7 +286,7 @@ section{
 }
 .item-explained{
     width: 400px;
-    height: 450px;
+    min-height: 480px;
     background-color: #1A1D29;
     justify-content: center;
     align-items: center;
@@ -336,11 +336,13 @@ section{
 }
 .lenguajes-logo{
     width: 95%;
-    margin-top: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .lenguajes-logo img{
     width: 60px;
@@ -351,8 +353,6 @@ section{
     background-color: #30E3CA;
     width: 95%;
     height: 45px;
-    margin-top: 7%;
-    margin-bottom: 2%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
