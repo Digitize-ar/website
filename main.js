@@ -16,11 +16,10 @@ function toggleDiv(id) {
     
     } else {
       div.style.display = "none";
-    }
+}
   }
   function closeDiv(id) {
     var div = document.getElementById(id);
-    
     if (div.style.display === "flex") {
         itemcont.style.display = "none";
         div.style.display = "none"
